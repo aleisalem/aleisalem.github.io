@@ -1,280 +1,1225 @@
 <!DOCTYPE HTML>
-<!--
-	Indivisible by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
--->
-<html>
-	<head>
-		<title>Aleieldin Salem, Ph.D.</title>
-		<link rel="icon" type="image/x-icon" href="./images/alei.ico">
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload-0 is-preload-1">
+<html lang="en">
+<head>
+	<title>Aleieldin Salem, Ph.D. | Head of Security</title>
+	<link rel="icon" type="image/x-icon" href="./images/alei.ico">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="Aleieldin Salem, Ph.D. — Head of Security. Bridging deep technical insight with strategic risk leadership." />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<style>
+		/* ── Variables ─────────────────────────────────── */
+		:root {
+			--bg:          #060c06;
+			--bg-card:     #0a140a;
+			--bg-hover:    #0f1e0f;
+			--green:       #00ff41;
+			--green-dim:   #00c030;
+			--green-glow:  rgba(0,255,65,.35);
+			--green-faint: rgba(0,255,65,.07);
+			--border:      rgba(0,255,65,.18);
+			--red:         #ff3b30;
+			--amber:       #ffa500;
+			--cyan:        #00d4ff;
+			--text:        #b8dbb8;
+			--muted:       #4a6e4a;
+			--font:        'JetBrains Mono', 'Courier New', Courier, monospace;
+			--nav-h:       58px;
+		}
 
-		<!-- Wrapper -->
-		<div id="wrapper">
+		/* ── Reset ─────────────────────────────────────── */
+		*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+		html { scroll-behavior:smooth; }
+		body {
+			background: var(--bg);
+			color: var(--text);
+			font-family: var(--font);
+			font-size: 14px;
+			line-height: 1.75;
+			overflow-x: hidden;
+		}
 
-			<!-- Home -->
-			<article id="home" class="panel special">
-				<div class="image">
-					<img src="images/homepage.jpg" alt="" data-position="center center" />
-				</div>
-				<div class="content">
-					<div class="inner">
-						<header>
-							<h1>Aleieldin "Alei" Salem</h1>
-							<p>Information Security Professional<br />
-							avid gamer, sports fan, music enthusiast</p>
-						</header>
-						<nav id="nav">
-							<ul class="actions stacked special animated spinY">
-								<li><a href="#work" class="button">Work</a></li>
-                                <li><a href="#projects" class="button">Projects</a></li>								
-                                <li><a href="#education" class="button">Education</a></li>
-								<li><a href="#about" class="button">About</a></li>
-								<!--<li><a href="#contact" class="button">Contact</a></li>-->
-								<!--<li><a href="#elements" class="button">Elements</a></li>-->
-							</ul>
-						</nav>
-							<ul class="icons">
-								<li><a href="https://www.linkedin.com/in/alei-salem-21ab6313/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://www.github.com/aleisalem" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="mailto:aleieldin.salem@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-					</div>
-				</div>
-			</article>
+		/* Subtle scanline overlay */
+		body::after {
+			content:'';
+			position:fixed; inset:0;
+			background: repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,.04) 2px,rgba(0,0,0,.04) 4px);
+			pointer-events:none;
+			z-index:9999;
+		}
 
-			<!-- Work -->
-			<article id="work" class="panel secondary">
-				<div class="image">
-					<img src="images/work.jpg" alt="" data-position="center center" />
-				</div>
-				<div class="content">
-					<ul class="actions animated spinX">
-						<li><a href="#" class="button small back">Back</a></li>
-					</ul>
-					<div class="inner">
-						<header>
-							<h2>Work Experience</h2>
-							<p>What have I been up to?<br/>
-							Check out my LinkedIn <a target="_blank" href="https://www.linkedin.com/in/alei-salem-21ab6313/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a> for more details</p>
-						</header>
-						
-						<!-- Teamlead Security gridX -->
-						<b style="font-size: 22px; font-weight: bold">Teamlead Security</b><br/>
-						<b style="font-size: 20px;">gridX GmbH</b><br/>
-						September 2022 - <b style="font-weight: bold">Present</b><br/><br/>
+		::-webkit-scrollbar { width:5px; }
+		::-webkit-scrollbar-track { background:var(--bg); }
+		::-webkit-scrollbar-thumb { background:var(--green-dim); border-radius:3px; }
 
-						<!-- Security Specialist StayrAI -->
-						<b style="font-size: 22px; font-weight: bold">Co-Founder</b><br/>
-						<b style="font-size: 20px;">StayrAI GmbH</b><br/>
-						October 2021 - October 2023<br/><br/>
-						
-						<!-- Security Specialist S&ST -->
-						<b style="font-size: 22px; font-weight: bold">Security Specialist</b><br/>
-						<b style="font-size: 20px;">Azena</b><br/>
-						September 2020 - April 2022<br/><br/>						
-						
-						<!--  WiMi TUM -->
-						<b style="font-size: 22px; font-weight: bold">Doctoral Researcher</b><br/>
-						<b style="font-size: 20px;">Technische Universität München</b><br/>
-						October 2015 - August 2020<br/><br/>	
-					</div>
-				</div>
-			</article>
-			
-			<!-- Projects -->
-			<article id="projects" class="panel secondary">
-				<div class="image">
-					<img src="images/snow.jpg" alt="" data-position="center center" />
-				</div>
-				<div class="content">
-					<ul class="actions animated spinX">
-						<li><a href="#" class="button small back">Back</a></li>
-					</ul>
-					<div class="inner">
-						<header>
-							<h2>Projects</h2>
-							<p>Here is a list of the some of the projects I worked on or currently working on.
-							A lot of those projects are free and open-source and can be found on my Github page <a href="https://www.github.com/aleisalem" class="icon brands fa-github"><span class="label">GitHub</span></a></p>
-						</header>
-						<ul>
-							<li><b style="font-size: 22px; font-weight: bold">StayrAI</b> (October 2021 - October 2023): StayrAI is the main product of <a target="_blank" href="https://www.stayrai.com">StayrAI GmbH</a> and is meant to automatically change water of aquaria, detect and diagnose diseases, and constantly keeps your the temperature, chemistry, lights, and water levels of such aquaria in perfect ranges</li>
-							<li><b style="font-size: 22px; font-weight: bold">Maat</b> (April 2019 - Present): a framework that mines VirusTotal scan reports to extract various information about the 
-							correctness, completeness, and consistency of scanners.</li>
-							<li><b style="font-size: 22px; font-weight: bold">GoldRusher</b> (January 2015 - January 2018): GoldRusher is a dynamic analysis tool primarily meant to aid reverse engineers 
-							with analyzing (malicious) binaries.</li>
-							<li><b style="font-size: 22px; font-weight: bold">Droidutan</b> (December 2016 - Present): Droidutan (Android + Orangutan) is a simple Python API built to test Android apps. 
-							The API is built on top of AndroidViewClient.</li>
-							<li><b style="font-size: 22px; font-weight: bold">Repackman</b> (January 2018 - August 2018): Repackman is a tool to automatically repackage Android apps with arbitrary 
-							(malicious) payloads for research purposes.</li>
-							<li><b style="font-size: 22px; font-weight: bold">Oedipus</b> (April 2015 - December 2016): A Python framework that uses machine learning algorithms to implement the 
-							metadata recovery attack against obfuscated programs.</li>																			
-						</ul>
-					</div>
-				</div>
-			</article>
+		a { color:var(--green); text-decoration:none; }
+		a:hover { color:#fff; }
 
-			<!-- Education -->
-			<article id="education" class="panel secondary">
-				<div class="image">
-					<img src="images/academics.jpg" alt="" data-position="center center" />
-				</div>
-				<div class="content">
-					<ul class="actions animated spinX">
-						<li><a href="#" class="button small back">Back</a></li>
-					</ul>
-					<div class="inner">
-						<header>
-							<h2>Education</h2>
-						</header>
-						<!--  Ph.D. TUM -->
-						<b style="font-size: 22px; font-weight: bold">Ph.D. Computer Science</b><br/>
-						<table style="background-color: white;">
-							<tr>
-								<td style="font-size: 20px;">Technical University of Munich</td>
-								<td style="text-align:right"><a href="https://www.in.tum.de/i04/"><img src="images/icons/tum-logo.png" style="width: 64px; height: 32px" alt="TUM Logo"/></a></td>
-							</tr>
-							<tr>
-								<td colspan="2">October 2015 - March 2021</td>
-							</tr>
-							<tr>
-								<td colspan="2"><u>Thesis Title</u>: Accurate and Reliable Labeling for Effective Detection of Android Malware</td>
- 							</tr>
-						</table>
-						<!--  M.Sc. TUM -->	
-						<b style="font-size: 22px; font-weight: bold">M.Sc. Computer Science</b><br/>
-						<table style="background-color: white;">
-							<tr>
-								<td style="font-size: 20px;">Technical University of Munich</td>
-								<td style="text-align:right"><a href="https://www.in.tum.de/"><img src="images/icons/tum-logo.png" style="width: 64px; height: 32px" alt="TUM Logo"/></a></td>
-							</tr>
-							<tr>
-								<td colspan="2">September 2013 - October 2015</td>
-							</tr>
-							<tr> 
-								<td colspan="2"><u>Thesis Title</u>: Metadata Recovery of Transformations from Obfuscated Software via Machine Learning Techniques</td>
- 							</tr>
-						</table>
-						<!--  M.Sc. UCL -->	
-						<b style="font-size: 22px; font-weight: bold">M.Sc. Information Security</b><br/>
-						<table style="background-color: white;">
-							<tr>
-								<td style="font-size: 20px;">University College London</td>
-								<td style="text-align:right"><a href="https://www.ucl.ac.uk/computer-science/study/postgraduate-taught/information-security-msc"><img src="images/icons/ucl-logo.jpg" style="width: 80px; height: 42px" alt="UCL Logo"/></a></td>
-							</tr>
-							<tr>
-								<td colspan="2">September 2011 - September 2012</td>
-							</tr>
-							<tr>
-								<td colspan="2"><u>Thesis Title</u>: Semantic-based Misuse Detection of Malware in Web Applications</td>
-							</tr>
-						</table>
-						<!--  B.Sc. AUC -->	
-						<b style="font-size: 22px; font-weight: bold">B.Sc. Computer Science</b><br/>
-						<table style="background-color: white;">
-							<tr>
-								<td style="font-size: 20px;">The American University in Cairo</td>
-								<td style="text-align:right"><a href="https://www.aucegypt.edu"><img src="images/icons/auc-logo.png" style="width: 64px; height: 64px" alt="AUC Logo"/></a></td>
-							</tr>
-							<tr>
-								<td colspan="2">September 2004 - February 2009</td>
-							</tr>
-						</table>
-					</div>
-				</div>
-			</article>
-			
-			<!-- About -->
-			<article id="about" class="panel secondary">
-				<div class="image">
-					<img src="images/cairo.jpeg" alt="" data-position="center center" />
-				</div>
-				<div class="content">
-					<ul class="actions animated spinX">
-						<li><a href="#" class="button small back">Back</a></li>
-					</ul>
-					<div class="inner">
-						<header>
-							<h2>About</h2>
-						</header>
-							<p>Born and raised in <a target="_blank" href="https://en.wikipedia.org/wiki/Cairo">Cairo</a>, I developed an interest in <i>building and breaking things</i> or, in other words, software engineering and even more so in information security during my teenage years. Misled by Hollywood's depiction of a hooded-hacker sitting in their basement going about their nightly business, I started using some crude tools such as <a target="_blank" href="https://en.wikipedia.org/wiki/Sub7">Sub7</a>, Visual Basic, and some social engineering techniques to hack into my friends' computers. Despite managing to social engineer my way into getting some passwords and sensitive information, I probably infected my computer with a heap of malware rather than successfully broke into my 
-							friends' devices!</p>
-							
-							<p>Majoring in computer science at the American University in Cairo (AUC), I enrolled in every single security- and network-focused course I could enrol in to gather as much  academic information about the security domain as possible. In 2008, that was nowhere near enough to land a job at the few Egyptian companies that worked within the security domain. Funny how far the industry came and how many security-focused job opportunities one can find nowadays. Well, I thought maybe another degree in information security can help me find a job. So, I went for a master's degree in information security at University College London (UCL) between 2011 and 2012.</p>
+		/* ── Matrix rain ───────────────────────────────── */
+		#matrix-rain {
+			position:fixed; inset:0;
+			z-index:-1;
+			opacity:.045;
+		}
 
-							<p> During my master's at UCL, I decided upon further pursuing the academic research aspect of information security by going for a doctoral degree. Unfortunately, I could not secure funding for any of the doctoral programs that accepted me in the UK. So, I moved back to Cairo to work as an information security researcher for a mere of one year before finally moving to Munich, Germany for a second master's degree at the TU Munich, and a doctoral degree that I wrapped up in 2021.</p>
+		/* ── Navbar ────────────────────────────────────── */
+		#navbar {
+			position:fixed; top:0; left:0; right:0;
+			height:var(--nav-h);
+			background:rgba(6,12,6,.93);
+			border-bottom:1px solid var(--border);
+			display:flex; align-items:center; justify-content:space-between;
+			padding:0 2.5rem;
+			z-index:1000;
+			backdrop-filter:blur(12px);
+			-webkit-backdrop-filter:blur(12px);
+		}
+		.nav-prompt { font-size:13px; white-space:nowrap; }
+		.nav-user  { color:var(--green); font-weight:700; }
+		.nav-sep   { color:var(--muted); }
+		.nav-path  { color:var(--cyan); }
+		.nav-dollar{ color:var(--muted); margin-left:3px; }
 
-							<p> My primary research focus is on utilizing machine learning techniques and algorithms within the domains of malware analysis/detection focusing on Android malware. After five years of grinding and getting a good number of my papers rejected, I successfully defended my doctoral <a target="_blank" href="https://mediatum.ub.tum.de/?id=1574488">thesis</a> entitled "Accurate and Reliable Labeling for Effective Detection of Android Malware" and decided that I would never pursue a career in academia (i.e., enough is enough).</p>
+		.nav-links { display:flex; list-style:none; gap:.2rem; }
+		.nav-links a {
+			color:var(--muted); font-size:12px;
+			padding:4px 10px;
+			border:1px solid transparent; border-radius:2px;
+			transition:all .2s;
+		}
+		.nav-links a:hover, .nav-links a.active {
+			color:var(--green);
+			border-color:var(--border);
+			background:var(--green-faint);
+		}
 
-							<p> Ever since I have been helping firms build and maintain their security programs. My tasks range from the tiresome creation and enforcement of ISO27*-/SOC2-compliant security policies to writing (secure) code and everything in the middle: penetration testing, writing tools to scan apps and code bases for potential vulnerabilities, hosting security awareness talks, threat modeling, etc.
-							</p>
+		.nav-status { display:flex; align-items:center; gap:6px; font-size:11px; color:var(--green-dim); }
+		.status-dot {
+			width:7px; height:7px; border-radius:50%;
+			background:var(--green);
+			box-shadow:0 0 6px var(--green);
+			animation:pulse-dot 2s infinite;
+		}
+		@keyframes pulse-dot { 0%,100%{opacity:1;} 50%{opacity:.35;} }
 
-							<p> Additionally, between late 2021 and late 2023, I have been part of a hobby project that morphed into a GmbH (German for LLC) that we named <a target="_blank" href="https://www.stayrai.com">StayrAI</a>. As a co-founder, my tasks basically spanned everything. But I really enjoyed the part about developing our apps in Flutter, Dart, and Go, setting up and maintaining our AWS-based cloud infrastructure, and anything that has to do with security.
-							</p>
+		/* ── Section base ──────────────────────────────── */
+		.section-wrap {
+			max-width:1080px;
+			margin:0 auto;
+			padding:calc(var(--nav-h) + 70px) 2rem 80px;
+		}
+		.section-header { margin-bottom:2.5rem; }
+		.cmd-label {
+			font-size:12px; color:var(--muted);
+			margin-bottom:6px;
+		}
+		.cmd-label::before { content:'> '; color:var(--green); }
+		.section-title {
+			font-size:1.6rem; font-weight:700;
+			color:var(--green); text-transform:uppercase; letter-spacing:4px;
+			border-bottom:1px solid var(--border);
+			padding-bottom:10px;
+		}
 
-							<p>And that's all folks! That's the story of my life. :D</p>
-					</div>
-				</div>
-			</article>
+		/* ── Hero ──────────────────────────────────────── */
+		#hero {
+			min-height:100vh;
+			display:flex; flex-direction:column; justify-content:center;
+			padding:var(--nav-h) 6vw 60px;
+			position:relative;
+		}
+		.hero-eyebrow {
+			font-size:11px; letter-spacing:4px; text-transform:uppercase;
+			color:var(--muted); margin-bottom:1.5rem;
+		}
+		.hero-eyebrow::before { content:'[ '; color:var(--green); }
+		.hero-eyebrow::after  { content:' ]'; color:var(--green); }
 
-			<!-- Contact 
-			<article id="contact" class="panel secondary">
-				<div class="image">
-					<img src="images/lake.jpg" alt="" data-position="bottom center" />
-				</div>
-				<div class="content">
-					<ul class="actions animated spinX">
-						<li><a href="#" class="button small back">Back</a></li>
-					</ul>
-					<div class="inner">
-						<header>
-							<h2>Contact</h2>
-						</header>
-						<form method="post" action="#">
-							<div class="fields">
-								<div class="field half">
-									<label for="name">Name</label>
-									<input type="text" name="name" id="name" />
-								</div>
-								<div class="field half">
-									<label for="email">Email</label>
-									<input type="text" name="email" id="email" />
-								</div>
-								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="5"></textarea>
-								</div>
-							</div>
-							<ul class="actions">
-								<li><a href="" class="button submit">Send Message</a></li>
-							</ul>
-						</form>
-					</div>
-				</div>
-			</article>-->
-							</div>
-						</div>
-					</article>
+		.hero-name {
+			font-size:clamp(3.5rem,9vw,7.5rem);
+			font-weight:800; text-transform:uppercase;
+			color:var(--green); line-height:1; letter-spacing:-2px;
+			margin-bottom:1rem;
+			position:relative;
+			display:inline-block;
+		}
+		/* Glitch layers */
+		.hero-name::before,
+		.hero-name::after {
+			content:attr(data-text);
+			position:absolute; top:0; left:0;
+			width:100%; height:100%;
+			font-size:inherit; font-weight:inherit;
+			text-transform:inherit; line-height:inherit;
+		}
+		.hero-name::before {
+			color:var(--red);
+			animation:glitch-top 6s infinite;
+			clip-path:polygon(0 0,100% 0,100% 40%,0 40%);
+		}
+		.hero-name::after {
+			color:var(--cyan);
+			animation:glitch-bot 6s infinite;
+			clip-path:polygon(0 60%,100% 60%,100% 100%,0 100%);
+		}
+		@keyframes glitch-top {
+			0%,88%,100%{transform:translate(0);}
+			89%{transform:translate(-4px,1px);}
+			91%{transform:translate(4px,-1px);}
+			93%{transform:translate(-2px,0);}
+			95%{transform:translate(3px,1px);}
+			97%{transform:translate(0);}
+		}
+		@keyframes glitch-bot {
+			0%,88%,100%{transform:translate(0);}
+			89%{transform:translate(4px,-1px);}
+			91%{transform:translate(-4px,1px);}
+			93%{transform:translate(2px,0);}
+			95%{transform:translate(-3px,-1px);}
+			97%{transform:translate(0);}
+		}
 
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Indivisible by Pixelarity</p>
-					</footer>
+		.hero-subtitle {
+			font-size:clamp(.95rem,2vw,1.25rem);
+			color:var(--text); font-weight:300; letter-spacing:1px;
+			margin-bottom:.4rem;
+		}
+		#typed-title {
+			color:var(--green);
+			border-right:2px solid var(--green);
+			animation:blink-cursor 1s step-end infinite;
+		}
+		@keyframes blink-cursor { 50%{border-color:transparent;} }
 
+		.hero-tagline {
+			font-size:clamp(.75rem,1.1vw,.88rem);
+			color:var(--muted); max-width:560px; margin-bottom:2rem;
+		}
+		.hero-tagline::before { content:'// '; color:var(--green-dim); }
+
+		.hero-meta {
+			display:flex; flex-wrap:wrap; gap:1.5rem;
+			margin-bottom:2.5rem;
+		}
+		.hero-meta-item { font-size:12px; color:var(--muted); }
+		.hero-meta-item i { color:var(--green-dim); margin-right:5px; }
+
+		.hero-links { display:flex; flex-wrap:wrap; gap:.75rem; }
+		.hero-link {
+			display:inline-flex; align-items:center; gap:7px;
+			padding:9px 18px;
+			border:1px solid var(--border);
+			color:var(--green); font-size:12px;
+			position:relative; overflow:hidden;
+			transition:color .2s, box-shadow .2s, border-color .2s;
+		}
+		.hero-link::before {
+			content:''; position:absolute;
+			left:-100%; top:0; bottom:0; width:100%;
+			background:var(--green-faint);
+			transition:left .25s;
+		}
+		.hero-link:hover::before { left:0; }
+		.hero-link:hover {
+			color:#fff; border-color:var(--green);
+			box-shadow:0 0 18px rgba(0,255,65,.2);
+		}
+
+		.scroll-hint {
+			position:absolute; bottom:28px; left:50%;
+			transform:translateX(-50%);
+			font-size:11px; letter-spacing:2px;
+			color:var(--muted); text-align:center;
+			animation:scroll-pulse 2.5s infinite;
+		}
+		.scroll-hint::before { content:'↓  '; color:var(--green); }
+		.scroll-hint::after  { content:'  ↓'; color:var(--green); }
+		@keyframes scroll-pulse { 0%,100%{opacity:.3;} 50%{opacity:1;} }
+
+		/* ── Stats bar ─────────────────────────────────── */
+		#stats-bar {
+			background:var(--bg-card);
+			border-top:1px solid var(--border);
+			border-bottom:1px solid var(--border);
+		}
+		.stats-inner {
+			max-width:1080px; margin:0 auto;
+			padding:40px 2rem;
+			display:grid;
+			grid-template-columns:repeat(4,1fr);
+			gap:1rem;
+		}
+		.stat-item { text-align:center; padding:.75rem; }
+		.stat-value {
+			display:block; font-size:2.4rem; font-weight:800;
+			color:var(--green); line-height:1; margin-bottom:6px;
+		}
+		.stat-label { font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:2px; }
+
+		/* ── Skills ────────────────────────────────────── */
+		.skills-grid { display:flex; flex-wrap:wrap; gap:8px; }
+		.skill-tag {
+			padding:5px 13px;
+			border:1px solid var(--border);
+			font-size:12px; color:var(--text);
+			background:var(--green-faint);
+			cursor:default;
+			transition:all .2s;
+		}
+		.skill-tag:hover {
+			border-color:var(--green); color:var(--green);
+			box-shadow:0 0 10px rgba(0,255,65,.15);
+		}
+
+		/* ── Timeline ──────────────────────────────────── */
+		.timeline { position:relative; padding-left:1.5rem; }
+		.timeline::before {
+			content:''; position:absolute;
+			left:0; top:8px; bottom:8px;
+			width:1px;
+			background:linear-gradient(to bottom,var(--green) 0%,var(--border) 100%);
+		}
+		.timeline-item {
+			position:relative; margin-bottom:3rem; padding-left:1.5rem;
+			opacity:0; transform:translateX(-18px);
+			transition:opacity .5s ease, transform .5s ease;
+		}
+		.timeline-item.visible { opacity:1; transform:translateX(0); }
+		.timeline-item::before {
+			content:'▶'; position:absolute;
+			left:-0.7rem; top:5px;
+			color:var(--green); font-size:9px;
+		}
+		.job-title   { font-size:1.15rem; font-weight:700; color:var(--green); margin-bottom:2px; }
+		.job-company { font-size:.95rem; color:var(--text); margin-bottom:2px; }
+		.job-note    { color:var(--muted); font-size:11px; }
+		.job-period  { font-size:11px; color:var(--muted); margin-bottom:.75rem; }
+		.current-badge {
+			display:inline-block;
+			border:1px solid var(--green-dim); color:var(--green);
+			font-size:9px; padding:1px 6px; letter-spacing:1px;
+			margin-left:8px; vertical-align:middle;
+		}
+		.job-desc {
+			font-size:12px; color:var(--muted); font-style:italic;
+			border-left:2px solid var(--border); padding-left:1rem;
+			margin-bottom:1rem;
+		}
+		.job-achievements { list-style:none; }
+		.job-achievements li {
+			font-size:13px; color:var(--text);
+			margin-bottom:5px; padding-left:1.2rem; position:relative;
+		}
+		.job-achievements li::before { content:'—'; position:absolute; left:0; color:var(--green-dim); }
+		.hl  { color:var(--green); font-weight:700; }
+		.num { color:var(--amber); font-weight:700; }
+
+		/* ── Education ─────────────────────────────────── */
+		.edu-grid {
+			display:grid;
+			grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+			gap:1.25rem;
+		}
+		.edu-card {
+			border:1px solid var(--border); padding:1.25rem;
+			background:var(--bg-card);
+			transition:border-color .25s, box-shadow .25s;
+			opacity:0; transform:translateY(18px);
+			transition:opacity .5s ease, transform .5s ease, border-color .25s, box-shadow .25s;
+		}
+		.edu-card.visible { opacity:1; transform:translateY(0); }
+		.edu-card:hover { border-color:var(--green-dim); box-shadow:0 0 20px rgba(0,255,65,.09); }
+		.edu-degree  { font-size:.85rem; font-weight:700; color:var(--green); text-transform:uppercase; letter-spacing:1px; margin-bottom:3px; }
+		.edu-school  { font-size:.9rem; color:var(--text); margin-bottom:3px; }
+		.edu-period  { font-size:11px; color:var(--muted); margin-bottom:8px; }
+		.edu-thesis  { font-size:11px; color:var(--muted); font-style:italic; border-top:1px solid var(--border); padding-top:8px; }
+		.edu-thesis::before { content:'Thesis: '; color:var(--green-dim); font-style:normal; }
+
+		/* ── Certs & Languages ─────────────────────────── */
+		.subsection-title {
+			font-size:1rem; font-weight:700; color:var(--green);
+			text-transform:uppercase; letter-spacing:3px;
+			border-bottom:1px solid var(--border); padding-bottom:8px;
+			margin-bottom:1.25rem;
+		}
+		.certs-row { display:flex; flex-wrap:wrap; gap:1rem; }
+		.cert-badge {
+			display:inline-flex; align-items:center; gap:8px;
+			padding:10px 18px;
+			border:1px solid var(--green-dim);
+			color:var(--green); font-size:12px; font-weight:700;
+		}
+		.cert-badge i { color:var(--amber); }
+
+		.lang-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; }
+		.lang-item { padding:1rem; border:1px solid var(--border); background:var(--bg-card); }
+		.lang-name  { color:var(--text); font-weight:700; font-size:.88rem; margin-bottom:3px; }
+		.lang-level { font-size:11px; color:var(--muted); margin-bottom:8px; }
+		.lang-bar-bg { height:2px; background:var(--bg-hover); border-radius:1px; }
+		.lang-bar    { height:2px; background:var(--green); border-radius:1px; box-shadow:0 0 6px rgba(0,255,65,.5); }
+
+		/* ── Publications ──────────────────────────────── */
+		.pub-list { display:flex; flex-direction:column; gap:.9rem; }
+		.pub-item {
+			border:1px solid var(--border); padding:1.1rem 1.4rem;
+			background:var(--bg-card);
+			opacity:0; transform:translateX(-16px);
+			transition:opacity .5s ease, transform .5s ease, border-color .25s;
+		}
+		.pub-item.visible { opacity:1; transform:translateX(0); }
+		.pub-item:hover { border-color:var(--green-dim); }
+		.pub-year  { float:right; font-size:11px; color:var(--muted); }
+		.pub-title { font-size:.88rem; color:var(--text); font-weight:700; margin-bottom:4px; clear:both; }
+		.pub-meta  { font-size:11px; color:var(--muted); }
+		.pub-meta .venue { color:var(--green-dim); }
+
+		/* ── About (terminal window) ───────────────────── */
+		.terminal-window { border:1px solid var(--border); background:var(--bg-card); border-radius:4px; overflow:hidden; }
+		.terminal-bar {
+			background:var(--bg-hover); padding:9px 14px;
+			display:flex; align-items:center; gap:7px;
+			border-bottom:1px solid var(--border);
+		}
+		.dot { width:11px; height:11px; border-radius:50%; }
+		.dot-red    { background:#ff5f57; }
+		.dot-yellow { background:#febc2e; }
+		.dot-green  { background:#28c840; }
+		.terminal-title-bar {
+			flex:1; text-align:center; font-size:12px; color:var(--muted);
+		}
+		.terminal-body {
+			padding:1.5rem 2rem;
+			font-size:13.5px; line-height:1.9;
+		}
+		.terminal-body .prompt {
+			color:var(--green-dim); font-size:12px;
+			margin-bottom:1.25rem; display:block;
+		}
+		.terminal-body p { color:var(--text); margin-bottom:1.1rem; }
+		.terminal-body a { border-bottom:1px solid var(--border); transition:border-color .2s; }
+		.terminal-body a:hover { border-color:var(--green); }
+		.cursor {
+			display:inline-block; width:8px; height:15px;
+			background:var(--green); vertical-align:middle;
+			margin-left:2px; animation:blink-block 1s step-end infinite;
+		}
+		@keyframes blink-block { 50%{opacity:0;} }
+
+		/* ── Projects ──────────────────────────────────── */
+		.projects-grid {
+			display:grid;
+			grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+			gap:1.1rem;
+		}
+		.project-card {
+			border:1px solid var(--border); padding:1.25rem;
+			background:var(--bg-card);
+			display:flex; flex-direction:column; gap:.6rem;
+			opacity:0; transform:translateY(18px);
+			transition:opacity .5s ease, transform .5s ease, border-color .25s, box-shadow .25s;
+		}
+		.project-card.visible { opacity:1; transform:translateY(0); }
+		.project-card:hover {
+			border-color:var(--green-dim);
+			box-shadow:0 0 22px rgba(0,255,65,.09);
+		}
+		.project-card-top {
+			display:flex; align-items:flex-start; justify-content:space-between; gap:.5rem;
+		}
+		.project-name {
+			font-size:.95rem; font-weight:700; color:var(--green);
+		}
+		.project-name a { color:inherit; }
+		.project-name a:hover { color:#fff; }
+		.project-link-icon {
+			color:var(--muted); font-size:12px;
+			flex-shrink:0; padding-top:2px;
+			transition:color .2s;
+		}
+		.project-card:hover .project-link-icon { color:var(--green); }
+		.project-desc {
+			font-size:12.5px; color:var(--text); line-height:1.65;
+			flex:1;
+		}
+		.project-meta {
+			display:flex; align-items:center; gap:.75rem;
+			margin-top:auto; padding-top:.5rem;
+			border-top:1px solid var(--border);
+			font-size:11px; color:var(--muted);
+		}
+		.project-lang { display:flex; align-items:center; gap:4px; }
+		.lang-dot {
+			width:9px; height:9px; border-radius:50%;
+			display:inline-block; flex-shrink:0;
+		}
+		.project-stars { display:flex; align-items:center; gap:4px; }
+		.project-stars i { color:var(--amber); font-size:10px; }
+		.project-tag {
+			padding:2px 8px; font-size:10px; letter-spacing:.5px;
+			border:1px solid var(--border);
+			margin-left:auto;
+		}
+		.tag-security { border-color:rgba(255,59,48,.4); color:var(--red); }
+		.tag-research  { border-color:rgba(0,212,255,.3); color:var(--cyan); }
+		.tag-education { border-color:rgba(255,165,0,.35); color:var(--amber); }
+		.tag-tool      { border-color:var(--border); color:var(--muted); }
+
+		/* ── Footer ────────────────────────────────────── */
+		#footer {
+			border-top:1px solid var(--border);
+			padding:28px 2rem; text-align:center;
+			font-size:12px; color:var(--muted);
+		}
+		.footer-prompt { font-size:13px; margin-bottom:8px; }
+		.footer-prompt .fp-user  { color:var(--green); }
+		.footer-prompt .fp-path  { color:var(--cyan); }
+		.footer-prompt .fp-cursor{ display:inline-block; width:8px; height:14px; background:var(--green); animation:blink-block 1s step-end infinite; vertical-align:middle; }
+		.footer-links { margin-top:8px; }
+		.footer-links a { color:var(--muted); margin:0 10px; font-size:12px; }
+		.footer-links a:hover { color:var(--green); }
+
+		/* ── Scroll fade-in ────────────────────────────── */
+		.fade-in {
+			opacity:0; transform:translateY(24px);
+			transition:opacity .55s ease, transform .55s ease;
+		}
+		.fade-in.visible { opacity:1; transform:translateY(0); }
+
+		/* ── Responsive ────────────────────────────────── */
+		@media (max-width:768px) {
+			.nav-links { display:none; }
+			.stats-inner { grid-template-columns:repeat(2,1fr); }
+			.hero-links .hero-link span { display:none; }
+		}
+		@media (max-width:480px) {
+			.hero-name { font-size:3rem; }
+			.stats-inner { grid-template-columns:repeat(2,1fr); gap:.5rem; }
+			.stat-value { font-size:1.8rem; }
+		}
+
+		/* ── Hero two-column layout ─────────────────────── */
+		#hero { flex-direction:column; }
+		.hero-inner {
+			display:flex; align-items:center;
+			gap:clamp(2rem,4vw,5rem);
+			width:100%;
+		}
+		.hero-content {
+			flex:1; min-width:0;
+			display:flex; flex-direction:column;
+		}
+		.hero-photo-wrap {
+			flex-shrink:0;
+			width:clamp(200px,26vw,340px);
+		}
+		#photo-canvas {
+			width:100%; display:block;
+			border:1px solid var(--border);
+			box-shadow:0 0 40px rgba(0,255,65,.12);
+		}
+		@media (max-width:900px) {
+			.hero-inner { flex-direction:column; align-items:flex-start; }
+			.hero-photo-wrap { width:min(260px,55vw); align-self:center; }
+		}
+		@media (max-width:600px) { .hero-photo-wrap { display:none; } }
+
+		/* ── Theme toggle button ────────────────────────── */
+		.theme-toggle {
+			display:flex; align-items:center; gap:5px;
+			background:none; border:1px solid var(--border);
+			color:var(--muted); font-family:var(--font);
+			font-size:11px; padding:4px 10px; letter-spacing:1px;
+			cursor:pointer; transition:all .2s; white-space:nowrap;
+		}
+		.theme-toggle:hover {
+			color:var(--green); border-color:var(--green-dim);
+			background:var(--green-faint);
+		}
+		.theme-toggle i { transition:transform .35s; }
+
+		/* ── Light theme ────────────────────────────────── */
+		html.light-theme {
+			--bg:          #f0f0e4;
+			--bg-card:     #e6e6d4;
+			--bg-hover:    #d8d8c2;
+			--green:       #005500;
+			--green-dim:   #2a7a2a;
+			--green-glow:  rgba(0,85,0,.2);
+			--green-faint: rgba(0,85,0,.06);
+			--border:      rgba(0,85,0,.18);
+			--red:         #aa1100;
+			--amber:       #996600;
+			--cyan:        #005070;
+			--text:        #111810;
+			--muted:       #4a604a;
+		}
+		html.light-theme body::after {
+			background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,.015) 3px,rgba(0,0,0,.015) 4px);
+		}
+		html.light-theme #matrix-rain { opacity:.02; }
+		html.light-theme #navbar { background:rgba(240,240,228,.95); }
+		html.light-theme #photo-canvas { box-shadow:0 0 30px rgba(0,85,0,.12); }
+		html.light-theme .theme-toggle i { transform:rotate(180deg); }
+		/* On light, hero name glitch layers use darker colors */
+		html.light-theme .hero-name { color:var(--green); }
+		html.light-theme .hero-name::before { color:#aa1100; }
+		html.light-theme .hero-name::after  { color:#005070; }
+	</style>
+</head>
+<body>
+
+<canvas id="matrix-rain"></canvas>
+
+<!-- ── Navbar ──────────────────────────────────────── -->
+<nav id="navbar">
+	<div class="nav-prompt">
+		<span class="nav-user">root@aleisalem</span><span class="nav-sep">:</span><span class="nav-path">~</span><span class="nav-dollar">$</span>
+	</div>
+	<ul class="nav-links">
+		<li><a href="#hero">./home</a></li>
+		<li><a href="#skills">./skills</a></li>
+		<li><a href="#work">./work</a></li>
+		<li><a href="#education">./edu</a></li>
+		<li><a href="#publications">./research</a></li>
+		<li><a href="#projects">./projects</a></li>
+		<li><a href="#about">./whoami</a></li>
+	</ul>
+	<div style="display:flex;align-items:center;gap:.75rem;">
+		<button class="theme-toggle" id="theme-toggle" title="Toggle light/dark theme" aria-label="Toggle theme">
+			<i class="fas fa-circle-half-stroke"></i><span>THEME</span>
+		</button>
+		<div class="nav-status"><span class="status-dot"></span><span>ONLINE</span></div>
+	</div>
+</nav>
+
+<!-- ── Hero ───────────────────────────────────────── -->
+<section id="hero">
+	<div class="hero-inner">
+		<div class="hero-content">
+			<div class="hero-eyebrow">Security Leader &nbsp;·&nbsp; Researcher &nbsp;·&nbsp; Builder &amp; Breaker</div>
+			<h1 class="hero-name" data-text="ALEI SALEM">ALEI SALEM</h1>
+			<div class="hero-subtitle">Ph.D.&nbsp; | &nbsp;<span id="typed-title"></span></div>
+			<div class="hero-tagline">Bridging deep technical insight with strategic risk leadership across critical infrastructure &amp; renewable energy</div>
+			<div class="hero-meta">
+				<span class="hero-meta-item"><i class="fas fa-location-dot"></i>Munich, Germany</span>
+				<span class="hero-meta-item"><i class="fas fa-shield-halved"></i>Head of Security @ gridX GmbH</span>
+				<span class="hero-meta-item"><i class="fas fa-graduation-cap"></i>Ph.D. TU Munich</span>
+				<span class="hero-meta-item"><i class="fas fa-certificate"></i>CISSP</span>
+			</div>
+			<div class="hero-links">
+				<a href="https://www.linkedin.com/in/alei-salem" class="hero-link" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+				<a href="https://www.github.com/aleisalem" class="hero-link" target="_blank" rel="noopener"><i class="fab fa-github"></i><span>GitHub</span></a>
+				<a href="mailto:aleieldin.salem@gmail.com" class="hero-link"><i class="fas fa-envelope"></i><span>Email</span></a>
+			</div>
+		</div>
+		<div class="hero-photo-wrap">
+			<canvas id="photo-canvas"></canvas>
+		</div>
+	</div>
+	<div class="scroll-hint">SCROLL TO EXPLORE</div>
+</section>
+
+<!-- ── Stats bar ──────────────────────────────────── -->
+<!-- <div id="stats-bar">
+	<div class="stats-inner">
+		<div class="stat-item"><span class="stat-value" data-target="15">0</span><span style="color:var(--green);font-weight:800;font-size:2rem;"></span><span class="stat-label">Years in Security</span></div>
+		<div class="stat-item"><span class="stat-value" data-target="378">0</span><span class="stat-label">Custom Detection Rules</span></div>
+		<div class="stat-item"><span class="stat-value" data-target="7">0</span><span class="stat-label">Peer-Reviewed Papers</span></div>
+		<div class="stat-item"><span class="stat-value" data-target="77">0</span><span class="stat-label">Repos Secured via SAST</span></div>
+	</div>
+</div> -->
+
+<!-- ── Skills ─────────────────────────────────────── -->
+<section id="skills">
+	<div class="section-wrap">
+		<div class="section-header fade-in">
+			<div class="cmd-label">./scan --target aleisalem --module capabilities --output json</div>
+			<h2 class="section-title">Capability Matrix</h2>
+		</div>
+		<div class="skills-grid fade-in">
+			<span class="skill-tag">Information Security Governance</span>
+			<span class="skill-tag">ISO 27001</span>
+			<span class="skill-tag">SOC 2</span>
+			<span class="skill-tag">NIS-2</span>
+			<span class="skill-tag">Cyber Resilience Act</span>
+			<span class="skill-tag">Secure SDLC</span>
+			<span class="skill-tag">DevSecOps</span>
+			<span class="skill-tag">SIEM Engineering</span>
+			<span class="skill-tag">SOAR Integration</span>
+			<span class="skill-tag">Threat Detection &amp; Response</span>
+			<span class="skill-tag">Incident Management &amp; Forensics</span>
+			<span class="skill-tag">Malware Analysis</span>
+			<span class="skill-tag">Reverse Engineering</span>
+			<span class="skill-tag">Penetration Testing</span>
+			<span class="skill-tag">Threat Modeling</span>
+			<span class="skill-tag">SAST / Code Scanning</span>
+			<span class="skill-tag">Security Awareness Programs</span>
+			<span class="skill-tag">Vendor &amp; Third-Party Risk</span>
+			<span class="skill-tag">Audit Readiness</span>
+			<span class="skill-tag">Cloud &amp; Infrastructure Security</span>
+			<span class="skill-tag">Android Security</span>
+			<span class="skill-tag">Machine Learning for Security</span>
+			<span class="skill-tag">CTI Integration</span>
+		</div>
+	</div>
+</section>
+
+<!-- ── Work ───────────────────────────────────────── -->
+<section id="work">
+	<div class="section-wrap">
+		<div class="section-header fade-in">
+			<div class="cmd-label">./history --type employment --format audit-log</div>
+			<h2 class="section-title">Work Experience</h2>
+		</div>
+		<div class="timeline">
+
+			<div class="timeline-item">
+				<div class="job-title">Head of Security <span class="current-badge">CURRENT</span></div>
+				<div class="job-company">gridX GmbH <span class="job-note">(E.ON Subsidiary)</span></div>
+				<div class="job-period">Jan 2025 – Present &nbsp;·&nbsp; Munich, Germany</div>
+				<div class="job-desc">Leading gridX's enterprise-wide security and compliance program across its digital energy infrastructure.</div>
+				<ul class="job-achievements">
+					<li>Building and operationalizing the ISMS for <span class="hl">ISO 27001</span> and <span class="hl">SOC 2</span> as pillars for <span class="hl">NIS-2</span> readiness</li>
+					<li>Collaborating with E.ON's cybersecurity and legal units on <span class="hl">Cyber Resilience Act</span> compliance for the flagship <em>Xenon</em> product</li>
+					<li>Primary contact for all external security audits, supplier assessments, and customer security questionnaires</li>
+					<li>Reporting security milestones to the management board — translating technical risk into business terms</li>
+					<li>Enhancing monitoring via deeper <span class="hl">SOAR</span> and <span class="hl">CTI</span> integrations across cloud and edge environments</li>
+					<li>Embedding security controls within DevOps without impeding engineering velocity</li>
+					<li>Driving the utilization of GenAI within IT and security topics for better efficiency</li>
+				</ul>
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<div class="timeline-item">
+				<div class="job-title">Teamlead Security</div>
+				<div class="job-company">gridX GmbH</div>
+				<div class="job-period">Sep 2022 – Jan 2025 &nbsp;·&nbsp; Munich, Germany</div>
+				<div class="job-desc">Directed a cross-functional security team establishing foundational governance, detection, and awareness capabilities in a rapidly scaling energy-tech environment.</div>
+				<ul class="job-achievements">
+					<li>Launched the <span class="hl">gridX Trust Center</span> — <span class="num">10,000+</span> annual views, directly supporting enterprise wins with Swiss Post, Soly, greenblocks, ChargeOne</li>
+					<li>Built a Buildkite plugin integrating automated SAST and AI-driven scanning (gosec, osv-scanner, opengrep, gitleaks, Claude Code) across <span class="num">80+ repositories</span></li>
+					<li>Coordinated <span class="num">5 external penetration tests</span> — each concluding with <span class="hl">zero critical or high-severity findings</span></li>
+					<li>Designed and delivered <span class="num">30+ security talks</span>: real incidents, LLM vulnerabilities, Wi-Fi attacks, hardware hacking, secure API design</li>
+					<li>Rolled out MDM coverage to <span class="num">95%</span> of endpoints (macOS, Windows, Linux)</li>
+					<li>Implemented SIEM ingesting <span class="num">500 GB/month</span> with <span class="num">378 custom detection rules</span></li>
+					<li>Conducted <span class="num">7 phishing campaigns</span>, reducing click-through rates from <span class="num">20.7% → 11.1%</span></li>
+					<li>Launched e-learning platform reaching <span class="num">91%</span> of employees (topics include: phishing, ransomware, AI safety, secure coding)</li>
+				</ul>
+			</div>
 
-	</body>
+			<div class="timeline-item">
+				<div class="job-title">Security Specialist</div>
+				<div class="job-company">Security &amp; Safety Things GmbH <span class="job-note">(Robert Bosch Subsidiary)</span></div>
+				<div class="job-period">Sep 2020 – Apr 2022 &nbsp;·&nbsp; Munich, Germany</div>
+				<div class="job-desc">Security across cloud-based and embedded systems for a Bosch IoT camera platform.</div>
+				<ul class="job-achievements">
+					<li>Performed threat modeling, security architecture reviews, and incident analysis</li>
+					<li>Operated <span class="hl">Elastic Cloud</span> SIEM for detection and incident response</li>
+					<li>Collaborated with external pentesters and bug bounty hunters to verify and remediate findings</li>
+					<li>Delivered internal trainings on secure coding, reverse engineering, and malware analysis</li>
+				</ul>
+			</div>
+
+			<div class="timeline-item">
+				<div class="job-title">Research Scientist</div>
+				<div class="job-company">Technical University of Munich</div>
+				<div class="job-period">Oct 2015 – Aug 2020 &nbsp;·&nbsp; Garching, Germany</div>
+				<div class="job-desc">Chair of Software and Systems Engineering — research in malware analysis, software protection, and ML-driven threat detection.</div>
+				<ul class="job-achievements">
+					<li>Published <span class="num">7 peer-reviewed papers</span> on malware detection, software protection, and reverse engineering</li>
+					<li>Reverse engineered hundreds of Android (malicious) applications using Jadx, IDA Pro, and the XPosed framework</li>
+					<li>Co-led industry collaborations with Siemens on AI-driven malware detection</li>
+					<li>Taught <span class="num">5 years</span> of courses: Security Engineering, Android Security Lab, Functional Programming</li>
+					<li>Supervised <span class="num">10 graduate theses</span> in security engineering and intrusion detection</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<!-- ── Education ──────────────────────────────────── -->
+<section id="education">
+	<div class="section-wrap">
+		<div class="section-header fade-in">
+			<div class="cmd-label">./verify --credentials --trust-chain full</div>
+			<h2 class="section-title">Education</h2>
+		</div>
+		<div class="edu-grid">
+			<div class="edu-card">
+				<div class="edu-degree">Ph.D. Computer Science</div>
+				<div class="edu-school">Technical University of Munich</div>
+				<div class="edu-period">Oct 2015 – Mar 2021</div>
+				<div class="edu-thesis">Accurate and Reliable Labeling for Effective Detection of Android Malware</div>
+			</div>
+			<div class="edu-card">
+				<div class="edu-degree">M.Sc. Computer Science</div>
+				<div class="edu-school">Technical University of Munich</div>
+				<div class="edu-period">Oct 2013 – Oct 2015</div>
+				<div class="edu-thesis">Metadata Recovery of Transformations from Obfuscated Software via Machine Learning Techniques</div>
+			</div>
+			<div class="edu-card">
+				<div class="edu-degree">M.Sc. Information Security</div>
+				<div class="edu-school">University College London</div>
+				<div class="edu-period">Sep 2011 – Sep 2012</div>
+				<div class="edu-thesis">Semantic-based Misuse Detection of Malware in Web Applications</div>
+			</div>
+			<div class="edu-card">
+				<div class="edu-degree">B.Sc. Computer Science</div>
+				<div class="edu-school">The American University in Cairo</div>
+				<div class="edu-period">Sep 2004 – Feb 2009</div>
+			</div>
+		</div>
+
+		<div style="margin-top:3rem;" class="fade-in">
+			<div class="cmd-label" style="margin-bottom:.75rem;">./list --certifications --status active</div>
+			<div class="subsection-title">Certifications</div>
+			<div class="certs-row">
+				<div class="cert-badge"><i class="fas fa-certificate"></i>CISSP</div>
+				<div class="cert-badge"><i class="fas fa-certificate"></i>CompTIA Security+</div>
+			</div>
+		</div>
+
+		<div style="margin-top:2.5rem;" class="fade-in">
+			<div class="cmd-label" style="margin-bottom:.75rem;">./list --languages --sort proficiency</div>
+			<div class="subsection-title">Languages</div>
+			<div class="lang-grid">
+				<div class="lang-item">
+					<div class="lang-name">Arabic</div>
+					<div class="lang-level">Native / Bilingual</div>
+					<div class="lang-bar-bg"><div class="lang-bar" style="width:100%"></div></div>
+				</div>
+				<div class="lang-item">
+					<div class="lang-name">English</div>
+					<div class="lang-level">Full Professional</div>
+					<div class="lang-bar-bg"><div class="lang-bar" style="width:95%"></div></div>
+				</div>
+				<div class="lang-item">
+					<div class="lang-name">German</div>
+					<div class="lang-level">Professional Working</div>
+					<div class="lang-bar-bg"><div class="lang-bar" style="width:68%"></div></div>
+				</div>
+				<div class="lang-item">
+					<div class="lang-name">Italian</div>
+					<div class="lang-level">Elementary</div>
+					<div class="lang-bar-bg"><div class="lang-bar" style="width:20%"></div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ── Publications ───────────────────────────────── -->
+<section id="publications">
+	<div class="section-wrap">
+		<div class="section-header fade-in">
+			<div class="cmd-label">./cat publications.bib | sort -r -k year</div>
+			<h2 class="section-title">Selected Publications</h2>
+		</div>
+		<div class="pub-list">
+			<div class="pub-item">
+				<span class="pub-year">[2021]</span>
+				<div class="pub-title">Maat: Automatically Analyzing VirusTotal for Accurate Labeling and Effective Malware Detection</div>
+				<div class="pub-meta">Aleieldin Salem, Sebastian Banescu, Alexander Pretschner &nbsp;·&nbsp; <span class="venue">ACM Transactions on Privacy and Security (TOPS)</span></div>
+			</div>
+			<div class="pub-item">
+				<span class="pub-year">[2021]</span>
+				<div class="pub-title">Towards Accurate Labeling of Android Apps for Reliable Malware Detection</div>
+				<div class="pub-meta">Aleieldin Salem &nbsp;·&nbsp; <span class="venue">11th ACM Conference on Data and Application Security and Privacy</span></div>
+			</div>
+			<div class="pub-item">
+				<span class="pub-year">[2018]</span>
+				<div class="pub-title">Repackman: A Tool for Automatic Repackaging of Android Apps</div>
+				<div class="pub-meta">Aleieldin Salem, F. Franziska Paulus, Alexander Pretschner &nbsp;·&nbsp; <span class="venue">A-Mobile 2018, ACM Press</span></div>
+			</div>
+			<div class="pub-item">
+				<span class="pub-year">[2018]</span>
+				<div class="pub-title">GoldRusher: A Miner for Rapid Identification of Hidden Code</div>
+				<div class="pub-meta">Aleieldin Salem &nbsp;·&nbsp; <span class="venue">25th IEEE International Conference on Software Analysis, Evolution and Reengineering</span></div>
+			</div>
+			<div class="pub-item">
+				<span class="pub-year">[2016]</span>
+				<div class="pub-title">Metadata Recovery From Obfuscated Programs Using Machine Learning</div>
+				<div class="pub-meta">Aleieldin Salem, Sebastian Banescu &nbsp;·&nbsp; <span class="venue">6th Workshop on Software Security, Protection, and Reverse Engineering, ACM</span></div>
+			</div>
+			<div class="pub-item">
+				<span class="pub-year">[2015]</span>
+				<div class="pub-title">A Framework for Empirical Evaluation of Malware Detection Resilience Against Behavior Obfuscation</div>
+				<div class="pub-meta">Sebastian Banescu, Tobias Wuechner, Aleieldin Salem et al. &nbsp;·&nbsp; <span class="venue">10th International Conference on Malicious and Unwanted Software (MALWARE)</span></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ── Projects ───────────────────────────────────── -->
+<section id="projects">
+	<div class="section-wrap">
+		<div class="section-header fade-in">
+			<div class="cmd-label">ls -la ~/github/aleisalem --show-stars</div>
+			<h2 class="section-title">Open Source Projects</h2>
+		</div>
+		<div class="projects-grid">
+
+			<div class="project-card">
+				<div class="project-card-top">
+					<div class="project-name"><a href="https://github.com/aleisalem/Aion" target="_blank" rel="noopener">Aion</a></div>
+					<a href="https://github.com/aleisalem/Aion" target="_blank" rel="noopener" class="project-link-icon"><i class="fab fa-github"></i></a>
+				</div>
+				<div class="project-desc">A framework for analysis, stimulation, and detection of Android repackaged malware. Automates dynamic analysis workflows to identify malicious behavior across app samples at scale.</div>
+				<div class="project-meta">
+					<span class="project-lang"><span class="lang-dot" style="background:#3572A5"></span>Python</span>
+					<span class="project-stars"><i class="fas fa-star"></i>11</span>
+					<span class="project-tag tag-research">RESEARCH</span>
+				</div>
+			</div>
+
+			<div class="project-card">
+				<div class="project-card-top">
+					<div class="project-name"><a href="https://github.com/aleisalem/GoldRusher" target="_blank" rel="noopener">GoldRusher</a></div>
+					<a href="https://github.com/aleisalem/GoldRusher" target="_blank" rel="noopener" class="project-link-icon"><i class="fab fa-github"></i></a>
+				</div>
+				<div class="project-desc">A dynamic analysis tool for rapid identification of hidden code in binaries. Aids reverse engineers in locating stealthy functionality buried inside obfuscated or packed executables. Published at IEEE SANER 2018.</div>
+				<div class="project-meta">
+					<span class="project-lang"><span class="lang-dot" style="background:#3572A5"></span>Python</span>
+					<span class="project-stars"><i class="fas fa-star"></i>5</span>
+					<span class="project-tag tag-security">SECURITY</span>
+				</div>
+			</div>
+
+			<div class="project-card">
+				<div class="project-card-top">
+					<div class="project-name"><a href="https://github.com/aleisalem/Droidutan" target="_blank" rel="noopener">Droidutan</a></div>
+					<a href="https://github.com/aleisalem/Droidutan" target="_blank" rel="noopener" class="project-link-icon"><i class="fab fa-github"></i></a>
+				</div>
+				<div class="project-desc">Android Orangutan — a smart monkey tester that analyzes and stress-tests Android applications. Built on top of AndroidViewClient to drive automated UI interaction and collect runtime behavior.</div>
+				<div class="project-meta">
+					<span class="project-lang"><span class="lang-dot" style="background:#3572A5"></span>Python</span>
+					<span class="project-stars"><i class="fas fa-star"></i>3</span>
+					<span class="project-tag tag-research">RESEARCH</span>
+				</div>
+			</div>
+
+			<div class="project-card">
+				<div class="project-card-top">
+					<div class="project-name"><a href="https://github.com/aleisalem/dejavu" target="_blank" rel="noopener">DejaVu</a></div>
+					<a href="https://github.com/aleisalem/dejavu" target="_blank" rel="noopener" class="project-link-icon"><i class="fab fa-github"></i></a>
+				</div>
+				<div class="project-desc">A fast, reliable method to classify Android repackaged malware. Uses structural fingerprinting to distinguish original apps from maliciously repackaged variants, even across heavy obfuscation.</div>
+				<div class="project-meta">
+					<span class="project-lang"><span class="lang-dot" style="background:#3572A5"></span>Python</span>
+					<span class="project-stars"><i class="fas fa-star"></i>2</span>
+					<span class="project-tag tag-security">SECURITY</span>
+				</div>
+			</div>
+
+			<div class="project-card">
+				<div class="project-card-top">
+					<div class="project-name"><a href="https://github.com/aleisalem/Maat" target="_blank" rel="noopener">Maat</a></div>
+					<a href="https://github.com/aleisalem/Maat" target="_blank" rel="noopener" class="project-link-icon"><i class="fab fa-github"></i></a>
+				</div>
+				<div class="project-desc">Named after the ancient Egyptian concept of truth and order. Mines VirusTotal scan reports to assess the correctness, completeness, and consistency of AV scanners — and trains ML-based labeling strategies for Android malware. Published in ACM TOPS 2021.</div>
+				<div class="project-meta">
+					<span class="project-lang"><span class="lang-dot" style="background:#3572A5"></span>Python</span>
+					<span class="project-stars"><i class="fas fa-star"></i></span>
+					<span class="project-tag tag-research">RESEARCH</span>
+				</div>
+			</div>
+
+			<div class="project-card">
+				<div class="project-card-top">
+					<div class="project-name"><a href="https://github.com/aleisalem/sqliteapp" target="_blank" rel="noopener">SQLiteApp</a></div>
+					<a href="https://github.com/aleisalem/sqliteapp" target="_blank" rel="noopener" class="project-link-icon"><i class="fab fa-github"></i></a>
+				</div>
+				<div class="project-desc">A deliberately vulnerable Android application backed by SQLite. Designed for teaching SQL injection attacks to students and developers in a safe, controlled environment — used in Android Security Lab courses.</div>
+				<div class="project-meta">
+					<span class="project-lang"><span class="lang-dot" style="background:#b07219"></span>Java</span>
+					<span class="project-stars"><i class="fas fa-star"></i>1</span>
+					<span class="project-tag tag-education">EDUCATION</span>
+				</div>
+			</div>
+
+			<div class="project-card">
+				<div class="project-card-top">
+					<div class="project-name"><a href="https://github.com/aleisalem/Incognito" target="_blank" rel="noopener">Incognito</a></div>
+					<a href="https://github.com/aleisalem/Incognito" target="_blank" rel="noopener" class="project-link-icon"><i class="fab fa-github"></i></a>
+				</div>
+				<div class="project-desc">A reverse engineering challenge Android app built for the Android Security Lab course. Contains native code obfuscated with Tigress for an extra layer of difficulty — gives students a realistic crackme experience.</div>
+				<div class="project-meta">
+					<span class="project-lang"><span class="lang-dot" style="background:#555555"></span>CMake / C</span>
+					<span class="project-stars"><i class="fas fa-star"></i>1</span>
+					<span class="project-tag tag-education">EDUCATION</span>
+				</div>
+			</div>
+
+			<div class="project-card">
+				<div class="project-card-top">
+					<div class="project-name"><a href="https://github.com/aleisalem/vibe-coding-template" target="_blank" rel="noopener">Vibe Coding Template</a></div>
+					<a href="https://github.com/aleisalem/vibe-coding-template" target="_blank" rel="noopener" class="project-link-icon"><i class="fab fa-github"></i></a>
+				</div>
+				<div class="project-desc">A reusable project template for AI-assisted and LLM-augmented development. Establishes conventions and structure for "vibe coding" workflows — shipping fast with generative AI in the loop.</div>
+				<div class="project-meta">
+					<span class="project-lang"><span class="lang-dot" style="background:#89e051"></span>Shell</span>
+					<span class="project-stars"><i class="fas fa-star"></i>0</span>
+					<span class="project-tag tag-tool">TOOL</span>
+				</div>
+			</div>
+
+			<div class="project-card">
+				<div class="project-card-top">
+					<div class="project-name"><a href="https://github.com/aleisalem/lacuoca" target="_blank" rel="noopener">Lacuoca</a></div>
+					<a href="https://github.com/aleisalem/lacuoca" target="_blank" rel="noopener" class="project-link-icon"><i class="fab fa-github"></i></a>
+				</div>
+				<div class="project-desc">A personal app for storing and quickly restoring cooking recipes — because even hackers need to eat well. A side project built for fun outside of security work.</div>
+				<div class="project-meta">
+					<span class="project-lang"><span class="lang-dot" style="background:#4a6e4a"></span>—</span>
+					<span class="project-stars"><i class="fas fa-star"></i>0</span>
+					<span class="project-tag tag-tool">HOBBY</span>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<!-- ── About ───────────────────────────────────────── -->
+<section id="about">
+	<div class="section-wrap">
+		<div class="section-header fade-in">
+			<div class="cmd-label">./whoami --verbose --no-filter</div>
+			<h2 class="section-title">About</h2>
+		</div>
+		<div class="terminal-window fade-in">
+			<div class="terminal-bar">
+				<span class="dot dot-red"></span>
+				<span class="dot dot-yellow"></span>
+				<span class="dot dot-green"></span>
+				<span class="terminal-title-bar">bash &mdash; aleisalem@gridx: ~</span>
+			</div>
+			<div class="terminal-body">
+				<span class="prompt">$ whoami --verbose</span>
+				<p>Born and raised in <a href="https://en.wikipedia.org/wiki/Cairo" target="_blank" rel="noopener">Cairo</a>, I developed an interest in <em>building and breaking things</em> — software engineering and information security — during my teenage years. Misled by Hollywood's depiction of a hooded hacker, I started with crude tools like <a href="https://en.wikipedia.org/wiki/Sub7" target="_blank" rel="noopener">Sub7</a>, Visual Basic, and social engineering to "hack" friends' computers. I probably infected my own machine more than theirs.</p>
+				<p>Majoring in Computer Science at the American University in Cairo, I enrolled in every security- and network-focused course I could find. A Master's in Information Security at University College London followed, then a second Master's and a doctoral degree at TU Munich — defended in 2021 on Android malware detection using machine learning.</p>
+				<p>Since then, I have been helping firms build and scale their security programs: ISO 27001 and SOC 2 ISMS implementations, writing detection rules, coordinating pen tests, building CI/CD scanning pipelines, and running security awareness campaigns. The blend of researcher, engineer, and pragmatic risk manager.</p>
+				<p>Currently serving as <strong>Head of Security</strong> at <a href="https://gridx.de" target="_blank" rel="noopener">gridX GmbH</a>, an E.ON subsidiary building digital energy infrastructure — where the stakes of getting security right are very real.<span class="cursor"></span></p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ── Footer ─────────────────────────────────────── -->
+<footer id="footer">
+	<div class="footer-prompt">
+		<span class="fp-user">root@aleisalem</span>:<span class="fp-path">~</span>$ <span class="fp-cursor"></span>
+	</div>
+	<p>Aleieldin Salem, Ph.D. &nbsp;&middot;&nbsp; Munich, Germany &nbsp;&middot;&nbsp; 2026</p>
+	<div class="footer-links">
+		<a href="https://www.linkedin.com/in/alei-salem-21ab6313/" target="_blank" rel="noopener">LinkedIn</a>
+		<a href="https://www.github.com/aleisalem" target="_blank" rel="noopener">GitHub</a>
+		<a href="mailto:aleieldin.salem@gmail.com">Email</a>
+	</div>
+</footer>
+
+<script>
+/* ── Matrix rain ────────────────────────────────── */
+(function () {
+	const canvas = document.getElementById('matrix-rain');
+	const ctx = canvas.getContext('2d');
+	function resize() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+	resize();
+	window.addEventListener('resize', resize);
+
+	const CHARS = 'アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン01';
+	const FS = 14;
+	let drops = [];
+	function initDrops() {
+		const cols = Math.floor(canvas.width / FS);
+		drops = Array.from({length: cols}, () => Math.floor(Math.random() * -canvas.height / FS));
+	}
+	initDrops();
+	window.addEventListener('resize', initDrops);
+
+	function draw() {
+		const isLight = document.documentElement.classList.contains('light-theme');
+		ctx.fillStyle = isLight ? 'rgba(240,240,228,0.08)' : 'rgba(6,12,6,0.06)';
+		ctx.fillRect(0, 0, canvas.width, canvas.height);
+		ctx.fillStyle = isLight ? 'rgba(0,80,0,0.55)' : '#00ff41';
+		ctx.font = FS + 'px monospace';
+		drops.forEach((y, i) => {
+			const ch = CHARS[Math.floor(Math.random() * CHARS.length)];
+			ctx.fillText(ch, i * FS, y * FS);
+			drops[i] = (y * FS > canvas.height && Math.random() > 0.975) ? 0 : y + 1;
+		});
+	}
+	setInterval(draw, 55);
+})();
+
+/* ── Typing animation ───────────────────────────── */
+(function () {
+	const el = document.getElementById('typed-title');
+	const phrases = ['Head of Security', 'Researcher', 'Malware Prober', 'Builder &amp; Breaker', 'Big AI Fan', 'Security Evangelist', 'IT Admin'];
+	let idx = 0, ch = 0, deleting = false;
+	function tick() {
+		const cur = phrases[idx];
+		el.innerHTML = deleting ? cur.substring(0, ch--) : cur.substring(0, ++ch);
+		let delay = deleting ? 45 : 95;
+		if (!deleting && ch === cur.length) { delay = 2200; deleting = true; }
+		else if (deleting && ch === 0) { deleting = false; idx = (idx + 1) % phrases.length; delay = 400; }
+		setTimeout(tick, delay);
+	}
+	tick();
+})();
+
+/* ── Counter animation ──────────────────────────── */
+function animateCount(el, target, dur) {
+	let v = 0, step = target / (dur / 16);
+	const t = setInterval(() => {
+		v = Math.min(v + step, target);
+		el.textContent = Math.floor(v);
+		if (v >= target) clearInterval(t);
+	}, 16);
+}
+const statsObs = new IntersectionObserver(entries => {
+	entries.forEach(e => {
+		if (e.isIntersecting) {
+			e.target.querySelectorAll('[data-target]').forEach(el => {
+				animateCount(el, +el.dataset.target, 1400);
+			});
+			statsObs.unobserve(e.target);
+		}
+	});
+}, { threshold: 0.4 });
+const statsBar = document.getElementById('stats-bar');
+if (statsBar) statsObs.observe(statsBar);
+
+/* ── Scroll animations ──────────────────────────── */
+const scrollObs = new IntersectionObserver((entries) => {
+	entries.forEach((entry, i) => {
+		if (entry.isIntersecting) {
+			setTimeout(() => entry.target.classList.add('visible'), i * 80);
+		}
+	});
+}, { threshold: 0.08 });
+document.querySelectorAll('.fade-in, .timeline-item, .edu-card, .pub-item, .project-card').forEach(el => scrollObs.observe(el));
+
+/* ── Theme toggle ───────────────────────────────── */
+(function() {
+	const btn = document.getElementById('theme-toggle');
+	const root = document.documentElement;
+	if (localStorage.getItem('alei_theme') === 'light') root.classList.add('light-theme');
+	btn.addEventListener('click', () => {
+		root.classList.toggle('light-theme');
+		localStorage.setItem('alei_theme', root.classList.contains('light-theme') ? 'light' : 'dark');
+	});
+})();
+
+/* ── Matrix photo portrait ──────────────────────── */
+(function() {
+	const CELL_W = 7, CELL_H = 11;
+	const CHARS = 'アイウエオカキクケコサシスセソタチツテトナニヌネノ01アカタサナハ';
+
+	const img = new Image();
+	img.crossOrigin = 'anonymous';
+	img.src = 'images/homepage.jpg';
+
+	img.onload = function() {
+		const canvas = document.getElementById('photo-canvas');
+		if (!canvas) return;
+
+		/* Fit the image into a fixed column count, preserving aspect ratio */
+		const COLS = 48;
+		const ROWS = Math.round(COLS * (img.height / img.width) * (CELL_W / CELL_H));
+		canvas.width  = COLS * CELL_W;
+		canvas.height = ROWS * CELL_H;
+		const ctx = canvas.getContext('2d');
+
+		/* Sample pixel luminance at cell resolution */
+		const off = document.createElement('canvas');
+		off.width = COLS; off.height = ROWS;
+		const offCtx = off.getContext('2d');
+		offCtx.drawImage(img, 0, 0, COLS, ROWS);
+		const px = offCtx.getImageData(0, 0, COLS, ROWS).data;
+
+		const lum = new Float32Array(COLS * ROWS);
+		let maxL = 0, minL = 1;
+		for (let i = 0; i < lum.length; i++) {
+			const R = px[i*4], G = px[i*4+1], B = px[i*4+2];
+			const l = R * 0.299 + G * 0.587 + B * 0.114;
+			lum[i] = l;
+			if (l > maxL) maxL = l;
+			if (l < minL) minL = l;
+		}
+		/* Normalise to [0,1] with a slight curve for contrast */
+		const range = maxL - minL || 1;
+		for (let i = 0; i < lum.length; i++) {
+			lum[i] = Math.pow((lum[i] - minL) / range, 0.75);
+		}
+
+		/* Random starting characters */
+		const cells = Array.from({length: COLS * ROWS},
+			() => CHARS[Math.floor(Math.random() * CHARS.length)]);
+
+		function draw() {
+			const isLight = document.documentElement.classList.contains('light-theme');
+			ctx.fillStyle = isLight ? '#f0f0e4' : '#060c06';
+			ctx.fillRect(0, 0, canvas.width, canvas.height);
+			ctx.font = `bold ${CELL_H - 1}px 'JetBrains Mono', monospace`;
+			ctx.textBaseline = 'top';
+
+			for (let r = 0; r < ROWS; r++) {
+				for (let c = 0; c < COLS; c++) {
+					const idx = r * COLS + c;
+					const l   = lum[idx];
+					if (l < 0.06) continue;
+
+					if (isLight) {
+						/* Dark-to-medium-green on warm paper */
+						const v   = Math.floor((1 - l) * 80);
+						const alp = 0.35 + l * 0.65;
+						ctx.fillStyle = `rgba(${v},${v + 80},${v},${alp.toFixed(2)})`;
+					} else {
+						/* Classic phosphor: dim→bright green */
+						const g   = Math.floor(60 + l * 195);
+						const alp = 0.2  + l * 0.8;
+						ctx.fillStyle = `rgba(0,${g},${Math.floor(g * 0.16)},${alp.toFixed(2)})`;
+					}
+					ctx.fillText(cells[idx], c * CELL_W, r * CELL_H);
+				}
+			}
+		}
+
+		function tick() {
+			/* Shimmer ~6 % of visible cells each frame */
+			const n = Math.ceil(COLS * ROWS * 0.06);
+			for (let i = 0; i < n; i++) {
+				const idx = Math.floor(Math.random() * COLS * ROWS);
+				if (lum[idx] > 0.08) cells[idx] = CHARS[Math.floor(Math.random() * CHARS.length)];
+			}
+			draw();
+		}
+
+		draw();
+		setInterval(tick, 120);
+	};
+
+	img.onerror = () => {
+		const wrap = document.querySelector('.hero-photo-wrap');
+		if (wrap) wrap.style.display = 'none';
+	};
+})();
+
+/* ── Active nav highlight ───────────────────────── */
+const sectionEls = document.querySelectorAll('section[id]');
+const navAs = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+	let cur = '';
+	sectionEls.forEach(s => { if (window.scrollY >= s.offsetTop - 80) cur = s.id; });
+	navAs.forEach(a => {
+		a.classList.toggle('active', a.getAttribute('href') === '#' + cur);
+	});
+}, { passive: true });
+</script>
+
+</body>
 </html>
